@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="UTF-8" /> 
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nikolay's Portfolio</title>
     <script src="config.js"></script>
@@ -15,63 +15,61 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
   </head>
   <body
     class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen"
   >
     <nav class="w-full">
       <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between py-6">
-          <a
-            href="#home"
-            class="text-2xl font-bold text-white cursor-pointer hover:text-blue-500"
-            >Portfolio</a
-          >
-          <button 
-            id="menu-toggle" 
-            class="lg:hidden text-white focus:outline-none"
-          >
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
-          <div class="hidden lg:block space-x-6">
-            <a
-              href="#home"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Home</a
-            >
+        <div class="flex items-center justify-center py-4">
+          <!-- Left side navigation items -->
+          <div class="hidden lg:flex items-center space-x-6 w-48 justify-end">
             <a
               href="#about"
-              class="text-gray-300 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white transition-colors text-lg"
               >About</a
             >
             <a
               href="#projects"
-              class="text-gray-300 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white transition-colors text-lg"
               >Work</a
             >
+          </div>
+
+          <!-- Center logo -->
+          <a
+            href="#home"
+            class="cursor-pointer mx-8 hover:scale-110 transition-all"
+            ><img
+              src="./images/logo2.png"
+              alt="logo"
+              class="h-14 bg-white rounded-full"
+          /></a>
+
+          <!-- Right side navigation items -->
+          <div class="hidden lg:flex items-center space-x-6 w-48">
             <a
               href="#education"
-              class="text-gray-300 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white transition-colors text-lg"
               >Education</a
             >
             <a
               href="#contact"
-              class="text-gray-300 hover:text-white transition-colors"
+              class="text-gray-300 hover:text-white transition-colors text-lg"
               >Contact</a
             >
           </div>
+
+          <!-- Mobile menu button -->
+          <button
+            id="menu-toggle"
+            class="lg:hidden text-white focus:outline-none absolute right-4"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
         </div>
-        <div 
-          id="mobile-menu" 
-          class="lg:hidden hidden"
-        >
+        <div id="mobile-menu" class="lg:hidden hidden">
           <div class="flex flex-col space-y-4 py-4">
-            <a
-              href="#home"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Home</a
-            >
             <a
               href="#about"
               class="text-gray-300 hover:text-white transition-colors"
@@ -102,7 +100,9 @@
         id="home"
         class="flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0"
       >
-        <div class="lg:w-1/2 space-y-6 lg:space-y-8 hero-content text-center lg:text-left">
+        <div
+          class="lg:w-1/2 space-y-6 lg:space-y-8 hero-content text-center lg:text-left"
+        >
           <h1
             class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-hero"
           >
@@ -111,7 +111,9 @@
           <p class="text-lg md:text-xl text-gray-300 animate-hero">
             Software Engineer | Student | Tech Enthusiast
           </p>
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 animate-hero">
+          <div
+            class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 animate-hero"
+          >
             <a
               href="#contact"
               class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-all hover:scale-105 hover:shadow-lg"
@@ -125,7 +127,9 @@
               View Work
             </a>
           </div>
-          <div class="flex justify-center lg:justify-start space-x-8 animate-hero pt-4">
+          <div
+            class="flex justify-center lg:justify-start space-x-8 animate-hero pt-4"
+          >
             <a
               href="https://github.com/nikolay508"
               target="_blank"
@@ -169,7 +173,9 @@
             front-end and back-end skills in a friendly yet challenging
             environment.
           </p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8"
+          >
             <div class="text-center p-4 bg-gray-700 rounded-lg">
               <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
               <p class="text-white">HTML</p>
@@ -242,12 +248,43 @@
         <h2 class="text-4xl font-bold text-white mb-12 text-center">
           Best of My Work
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-0 md:px-0 lg:px-0"
+        >
           <div
             class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
           >
             <img
-              src="project1.jpg"
+              src="./images/mj-charter.png"
+              alt="Project"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                MJ Charter Website
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Developed and launched a responsive, SEO-optimized yacht rental
+                website with mobile compatibility, ensuring security,
+                performance, and seamless user experience.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.mjcharter.com/"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
+          >
+            <img
+              src="./images/chat-app.png"
               alt="Project 1"
               class="w-full h-48 object-cover"
             />
@@ -263,11 +300,16 @@
               <div class="flex space-x-4">
                 <a
                   href="https://github.com/nikolay508/MERN-Real-Time-Chat-App"
+                  target="_blank"
                   class="text-blue-500 hover:text-blue-400"
                 >
                   <i class="fab fa-github"></i> Code
                 </a>
-                <a href="#" class="text-blue-500 hover:text-blue-400">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
               </div>
@@ -294,11 +336,16 @@
               <div class="flex space-x-4">
                 <a
                   href="https://github.com/nikolay508/SoftUni-Angular-Exam"
+                  target="_blank"
                   class="text-blue-500 hover:text-blue-400"
                 >
                   <i class="fab fa-github"></i> Code
                 </a>
-                <a href="#" class="text-blue-500 hover:text-blue-400">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
                   <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
               </div>
@@ -309,22 +356,62 @@
             class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
           >
             <img
-              src="./images/mj-charter.png"
+              src="./images/ai-chatbot.png"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">AI Chatbot</h3>
+              <p class="text-gray-300 mb-4">
+                This project is a chatbot that enables users to interact with
+                Lebron AI. Built using JavaScript, HTML, and CSS, it leverages
+                Google's Gemini API for seamless responses.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/nikolay508/AI-Chatbot"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="https://ai-chatbot-by-nikolay.netlify.app/"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
+          >
+            <img
+              src="./images/github-searcher.png"
               alt="Project"
               class="w-full h-48 object-cover"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold text-white mb-2">
-                MJ Charter Website
-              </h3>
+              <h3 class="text-xl font-bold text-white mb-2">GitHub Searcher</h3>
               <p class="text-gray-300 mb-4">
-                Developed and launched a responsive, SEO-optimized yacht rental
-                website with mobile compatibility, ensuring security,
-                performance, and seamless user experience.
+                Quickly find GitHub users by username and view key details like
+                profile name, bio, repos, followers, and more. Enjoy a clean,
+                user-friendly interface with real-time data from GitHub's API.
               </p>
               <div class="flex space-x-4">
                 <a
-                  href="https://www.mjcharter.com/"
+                  href="https://github.com/nikolay508/GitHub-Searcher-for-Profiles"
+                  target="_blank"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="https://guileless-heliotrope-8d05ad.netlify.app/"
+                  target="_blank"
                   class="text-blue-500 hover:text-blue-400"
                 >
                   <i class="fas fa-external-link-alt"></i> Live Demo
@@ -453,26 +540,26 @@
             </button>
           </form>
           <div class="flex justify-center space-x-6 mt-8">
-            <a 
-                href="https://github.com/nikolay508" 
-                target="_blank" 
-                class="text-gray-300 hover:text-white text-2xl"
+            <a
+              href="https://github.com/nikolay508"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-2xl"
             >
-                <i class="fab fa-github"></i>
+              <i class="fab fa-github"></i>
             </a>
-            <a 
-                href="https://www.linkedin.com/in/nikolay-todorov-138b43261/" 
-                target="_blank" 
-                class="text-gray-300 hover:text-white text-2xl"
+            <a
+              href="https://www.linkedin.com/in/nikolay-todorov-138b43261/"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-2xl"
             >
-                <i class="fab fa-linkedin"></i>
+              <i class="fab fa-linkedin"></i>
             </a>
-            <a 
-                href="https://www.instagram.com/nikolay508/" 
-                target="_blank" 
-                class="text-gray-300 hover:text-white text-2xl"
+            <a
+              href="https://www.instagram.com/nikolay508/"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-2xl"
             >
-                <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
@@ -480,20 +567,19 @@
     </div>
 
     <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
 
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
       });
 
-      Array.from(mobileMenuLinks).forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
+      Array.from(mobileMenuLinks).forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
         });
       });
     </script>
-
   </body>
 </html>
