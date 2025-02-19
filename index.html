@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikolay's Portfolio</title>
+    <script src="config.js"></script>
+    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+  </head>
+  <body
+    class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen"
+  >
+    <nav class="w-full">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-6">
+          <a
+            href="#home"
+            class="text-2xl font-bold text-white cursor-pointer hover:text-blue-500"
+            >Portfolio</a
+          >
+          <button 
+            id="menu-toggle" 
+            class="lg:hidden text-white focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+          <div class="hidden lg:block space-x-6">
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Work</a
+            >
+            <a
+              href="#education"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Education</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <div 
+          id="mobile-menu" 
+          class="lg:hidden hidden"
+        >
+          <div class="flex flex-col space-y-4 py-4">
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white transition-colors"
+              >About</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Work</a
+            >
+            <a
+              href="#education"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Education</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto px-4 md:px-8 lg:px-20">
+      <section
+        id="home"
+        class="flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0"
+      >
+        <div class="lg:w-1/2 space-y-6 lg:space-y-8 hero-content text-center lg:text-left">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-hero"
+          >
+            Hello, I'm <span class="text-blue-500">Nikolay</span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300 animate-hero">
+            Software Engineer | Student | Tech Enthusiast
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 animate-hero">
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transform transition-all hover:scale-105 hover:shadow-lg"
+            >
+              Contact Me
+            </a>
+            <a
+              href="#projects"
+              class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-3 px-8 rounded-full transform transition-all hover:scale-105"
+            >
+              View Work
+            </a>
+          </div>
+          <div class="flex justify-center lg:justify-start space-x-8 animate-hero pt-4">
+            <a
+              href="https://github.com/nikolay508"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-4xl transition-colors hover:scale-110 transform"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nikolay-todorov-138b43261/"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-4xl transition-colors hover:scale-110 transform"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nikolay508/"
+              target="_blank"
+              class="text-gray-300 hover:text-white text-4xl transition-colors hover:scale-110 transform"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="lg:w-1/2 mt-8 lg:mt-0 lg:ml-36">
+          <img
+            src="./images/photo.png"
+            alt="Profile"
+            class="rounded-full w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-auto object-cover border-4 border-blue-500"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="section-hidden">
+        <h2 class="text-4xl font-bold text-white mb-12 text-center">
+          About Me
+        </h2>
+        <div class="bg-gray-800 rounded-lg p-8">
+          <p class="text-gray-300 text-lg leading-relaxed mb-6 text-center">
+            Aspiring software engineer passionate about building scalable web
+            applications. Currently seeking an opportunity to further develop my
+            front-end and back-end skills in a friendly yet challenging
+            environment.
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-8">
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+              <p class="text-white">HTML</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+              <p class="text-white">CSS</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <img
+                src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                class="w-10 h-10 mx-auto mb-2"
+                alt="Tailwind CSS"
+              />
+              <p class="text-white">Tailwind CSS</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
+              <p class="text-white">JavaScript</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                class="w-10 h-10 mx-auto mb-2"
+                alt="TypeScript"
+              />
+              <p class="text-white">TypeScript</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+              <p class="text-white">React</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-angular text-4xl text-red-500 mb-2"></i>
+              <p class="text-white">Angular</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+              <p class="text-white">Node.js</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                class="w-10 h-10 mx-auto mb-2 invert"
+                alt="Express.js"
+              />
+              <p class="text-white">Express.js</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                class="w-10 h-10 mx-auto mb-2"
+                alt="MongoDB"
+              />
+              <p class="text-white">MongoDB</p>
+            </div>
+            <div class="text-center p-4 bg-gray-700 rounded-lg">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+                class="w-10 h-10 mx-auto mb-2"
+                alt="Socket.IO"
+              />
+              <p class="text-white">Socket.io</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-hidden">
+        <h2 class="text-4xl font-bold text-white mb-12 text-center">
+          Best of My Work
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
+          >
+            <img
+              src="project1.jpg"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                MERN Real-Time Chat App
+              </h3>
+              <p class="text-gray-300 mb-4">
+                This full-stack real-time app enables cross-device chat, photo
+                uploads, font changes, and profile edits, delivering a seamless,
+                customizable messaging experience inspired by WhatsApp.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/nikolay508/MERN-Real-Time-Chat-App"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" class="text-blue-500 hover:text-blue-400">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
+          >
+            <img
+              src="./images/angular-project.png"
+              alt="Project"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                MEAN School Activities App
+              </h3>
+              <p class="text-gray-300 mb-4">
+                This Angular application lets users explore, join, and manage
+                school activities, featuring a built-in search for quick
+                discovery and a seamless experience.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://github.com/nikolay508/SoftUni-Angular-Exam"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a href="#" class="text-blue-500 hover:text-blue-400">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all"
+          >
+            <img
+              src="./images/mj-charter.png"
+              alt="Project"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                MJ Charter Website
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Developed and launched a responsive, SEO-optimized yacht rental
+                website with mobile compatibility, ensuring security,
+                performance, and seamless user experience.
+              </p>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.mjcharter.com/"
+                  class="text-blue-500 hover:text-blue-400"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section-hidden">
+        <h2 class="text-4xl font-bold text-white mb-12 text-center">
+          Education
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-gray-800 rounded-lg p-8 space-y-8">
+            <div
+              class="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0"
+            >
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white">
+                  BSc in Computing & IT and Business
+                </h3>
+                <p class="text-blue-400 font-semibold">The Open University</p>
+                <p class="text-gray-300 mt-2">
+                  I have been accepted into the Open University, a UK
+                  institution specializing in remote education, and will begin
+                  my studies in October. This will allow me to learn
+                  independently while gaining insights from global
+                  professionals.
+                </p>
+              </div>
+              <div class="text-gray-400 md:text-right">
+                <p class="font-semibold">2025 - 2029</p>
+                <p>Undergraduate</p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0"
+            >
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white">
+                  Software Engineering with JavaScript
+                </h3>
+                <p class="text-blue-400 font-semibold">Software University</p>
+                <p class="text-gray-300 mt-2">
+                  Developed advanced JavaScript skills, a good foundation of
+                  TypeScript, and full-stack development within the JavaScript
+                  ecosystem. Gained hands-on experience with unit testing, REST
+                  APIs, state management, authentication, and real-world project
+                  integration.
+                </p>
+              </div>
+              <div class="text-gray-400 md:text-right">
+                <p class="font-semibold">09/2023 - 05/2025</p>
+                <p>Graduated</p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-between items-start space-y-4"
+            >
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white">
+                  High School Diploma
+                </h3>
+                <p class="text-blue-400 font-semibold">
+                  Second English Language School
+                </p>
+                <p class="text-gray-300 mt-2">
+                  Graduated from one of the most prestigious high schools in
+                  Sofia, where I achieved a high level of English proficiency
+                  and developed strong analytical thinking, problem-solving
+                  skills, and adaptability through a rigorous academic
+                  curriculum.
+                </p>
+              </div>
+              <div class="text-gray-400 md:text-right">
+                <p class="font-semibold">09/2019 - 05/2025</p>
+                <p>Graduated</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-hidden">
+        <h2 class="text-4xl font-bold text-white mb-12 text-center">
+          Get In Touch
+        </h2>
+        <div class="max-w-2xl mx-auto px-4 md:px-0">
+          <form id="contact-form" class="space-y-6">
+            <div>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+                class="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+                class="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none"
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+                rows="5"
+                class="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-blue-500 focus:outline-none"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transform transition-all hover:scale-105"
+            >
+              Send Message
+            </button>
+          </form>
+          <div class="flex justify-center space-x-6 mt-8">
+            <a 
+                href="https://github.com/nikolay508" 
+                target="_blank" 
+                class="text-gray-300 hover:text-white text-2xl"
+            >
+                <i class="fab fa-github"></i>
+            </a>
+            <a 
+                href="https://www.linkedin.com/in/nikolay-todorov-138b43261/" 
+                target="_blank" 
+                class="text-gray-300 hover:text-white text-2xl"
+            >
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a 
+                href="https://www.instagram.com/nikolay508/" 
+                target="_blank" 
+                class="text-gray-300 hover:text-white text-2xl"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      Array.from(mobileMenuLinks).forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+
+  </body>
+</html>
