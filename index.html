@@ -21,7 +21,7 @@
   >
     <nav class="w-full">
       <div class="container mx-auto px-4">
-        <div class="flex items-center justify-center py-4">
+        <div class="flex items-center justify-between lg:justify-center py-4">
           <!-- Left side navigation items -->
           <div class="hidden lg:flex items-center space-x-6 w-48 justify-end">
             <a
@@ -41,15 +41,10 @@
             >
           </div>
 
-          <!-- Center logo -->
-          <a
-            href="#home"
-            class="cursor-pointer mx-8 hover:scale-110 transition-all"
-            ><img
-              src="./images/logo2.png"
-              alt="logo"
-              class="h-14 bg-white rounded-full"
-          /></a>
+          <!-- Logo - left on mobile, centered on desktop -->
+          <a href="#home" class="cursor-pointer mx-0 lg:mx-8 hover:scale-110 transition-all">
+            <img src="./images/logo2.png" alt="logo" class="h-14 bg-white rounded-full" />
+          </a>
 
           <!-- Right side navigation items -->
           <div class="hidden lg:flex items-center space-x-6 w-48">
@@ -71,10 +66,7 @@
           </div>
 
           <!-- Mobile menu button -->
-          <button
-            id="menu-toggle"
-            class="lg:hidden text-white focus:outline-none absolute right-4"
-          >
+          <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
             <i class="fas fa-bars text-2xl"></i>
           </button>
         </div>
@@ -96,14 +88,14 @@
               >Work</a
             >
             <a
+              href="#testimonials"
+              class="text-gray-300 hover:text-white transition-colors"
+              >References</a
+            >
+            <a
               href="#education"
               class="text-gray-300 hover:text-white transition-colors"
               >Education</a
-            >
-            <a
-              href="#testimonials"
-              class="text-gray-300 hover:text-white transition-colors"
-              >Testimonials</a
             >
             <a
               href="#contact"
@@ -132,7 +124,7 @@
             Software Engineer | Student | Tech Enthusiast
           </p>
           <div
-            class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 animate-hero"
+            class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 animate-hero"
           >
             <a
               href="#contact"
@@ -142,9 +134,9 @@
             </a>
             <a
               href="#projects"
-              class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-3 px-8 rounded-full transform transition-all hover:scale-105"
+              class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-3 px-5 rounded-full transform transition-all hover:scale-105"
             >
-              View Work
+              View Experience
             </a>
           </div>
           <div
