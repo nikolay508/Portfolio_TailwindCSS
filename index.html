@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -85,7 +84,7 @@
             <a
               href="#projects"
               class="text-gray-300 hover:text-white transition-colors"
-              >Work</a
+              >Experience</a
             >
             <a
               href="#testimonials"
@@ -626,21 +625,5 @@
         </div>
       </section>
     </div>
-
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      Array.from(mobileMenuLinks).forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.add("hidden");
-        });
-      });
-    </script>
   </body>
 </html>

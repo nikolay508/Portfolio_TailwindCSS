@@ -68,3 +68,21 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             }, 3000);
         });
 });
+
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu functionality
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    Array.from(mobileMenuLinks).forEach((link) => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    });
+});
