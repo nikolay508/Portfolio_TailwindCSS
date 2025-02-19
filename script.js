@@ -86,3 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Navigation handling
+document.addEventListener('click', (e) => {
+    // Check if clicked element is a navigation link
+    if (e.target.tagName === 'A' && e.target.href.startsWith(window.location.origin)) {
+        e.preventDefault();
+        const path = e.target.getAttribute('href');
+        const sectionId = path.substring(1); // Remove the leading slash
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
