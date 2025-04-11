@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! Built with **HTML**, **Tailwind CSS**,
 
 ## 🚀 Tech Stack
 
-- **HTML5**
+- **HTML**
 - **Tailwind CSS**
 - **JavaScript**
 
