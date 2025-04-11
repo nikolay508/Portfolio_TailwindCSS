@@ -26,7 +26,7 @@ sections.forEach((section) => {
 });
 
 (function() {
-    emailjs.init(config.EMAILJS_PUBLIC_KEY);
+    emailjs.init(window.env.EMAILJS_PUBLIC_KEY);
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -47,8 +47,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     button.disabled = true;
 
     emailjs.send(
-        config.EMAILJS_SERVICE_ID,
-        config.EMAILJS_TEMPLATE_ID,
+        window.env.EMAILJS_SERVICE_ID,
+        window.env.EMAILJS_TEMPLATE_ID,
         templateParams
     )
         .then(function(response) {
@@ -68,7 +68,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             }, 3000);
         });
 });
-
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu functionality
