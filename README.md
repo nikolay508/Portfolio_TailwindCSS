@@ -10,8 +10,8 @@ Welcome to my personal portfolio website! Built with **HTML**, **Tailwind CSS**,
 
 ## 🎯 Features
 
-- 💻 Project gallery
-- 📚 Education information
+- 💻 Showcase of my best work
+- 📚 Information about my education
 - 👤 References from people I've worked with
 - 📇 Contact form to email me
 - ⚡ Smooth scroll and animations
