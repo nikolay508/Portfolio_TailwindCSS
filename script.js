@@ -72,7 +72,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu functionality
-    const menuToggle = document.getElementById("menu-toggle");
+    const menuToggle = document.getElementById("menu-togle");
     const mobileMenu = document.getElementById("mobile-menu");
     const mobileMenuLinks = mobileMenu.getElementsByTagName("a");
 
