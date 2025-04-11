@@ -94,20 +94,19 @@ document.addEventListener('click', (e) => {
         const href = e.target.getAttribute('href');
         
         // Skip external links and anchors without href
-        if (!href || href.startsWith('http') || href.startsWith('#')) {
+        if (!href || href.startsWith('http')) {
             return;
         }
 
-        e.preventDefault();
-        
-        // Handle both relative and absolute paths
-        const sectionId = href.startsWith('/') ? href.substring(1) : href;
-        const section = document.getElementById(sectionId);
-        
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.warn(`Could not find section with id: ${sectionId}`);
+        // Handle hash links
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const sectionId = href.substring(1); // Remove the # symbol
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     }
 });
