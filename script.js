@@ -90,14 +90,24 @@ document.addEventListener('DOMContentLoaded', () => {
 // Navigation handling
 document.addEventListener('click', (e) => {
     // Check if clicked element is a navigation link
-    if (e.target.tagName === 'A' && e.target.href.startsWith(window.location.origin)) {
+    if (e.target.tagName === 'A') {
+        const href = e.target.getAttribute('href');
+        
+        // Skip external links and anchors without href
+        if (!href || href.startsWith('http') || href.startsWith('#')) {
+            return;
+        }
+
         e.preventDefault();
-        const path = e.target.getAttribute('href');
-        const sectionId = path.substring(1); // Remove the leading slash
+        
+        // Handle both relative and absolute paths
+        const sectionId = href.startsWith('/') ? href.substring(1) : href;
         const section = document.getElementById(sectionId);
         
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.warn(`Could not find section with id: ${sectionId}`);
         }
     }
 });
